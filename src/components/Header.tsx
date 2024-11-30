@@ -1,37 +1,41 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+
   return (
     <div className="flex items-center justify-between w-ful h-16">
       <div className="text-xl font-semibold">
-        <a href="#">Rofarm</a>
+        <a href="/">Timeless</a>
       </div>
 
       <div className="hidden md:block bg-transparent">
-        <ul className="flex flex-col md:flex-row gap-5">
-          <li className="active hover:text-white">
-            <a href="#">Home</a>
+        <ul className="flex flex-col md:flex-row gap-8">
+          <li className="text-zinc-200 hover:text-white cursor-pointer">
+            <Link smooth={true} duration={500} to="about">
+              Tentang Kami
+            </Link>
           </li>
-          <li className="text-zinc-200 hover:text-white">
-            <a href="#">About</a>
+          <li className="text-zinc-200 hover:text-white cursor-pointer">
+            <Link smooth={true} duration={500} to="services">
+              Layanan
+            </Link>
           </li>
-          <li className="text-zinc-200 hover:text-white">
-            <a href="#">Services</a>
-          </li>
-          <li className="text-zinc-200 hover:text-white">
-            <a href="#">Careers</a>
-          </li>
-          <li className="text-zinc-200 hover:text-white">
-            <a href="#">Blog</a>
+          <li className="text-zinc-200 hover:text-white cursor-pointer">
+            <Link smooth={true} duration={500} to="whychooseus">
+              Mengapa Kami
+            </Link>
           </li>
         </ul>
       </div>
 
       <button
-        className={`hidden md:block px-4 py-1 bg-black/40 rounded-full hover:bg-black/60`}
+        className={`hidden md:block px-4 py-1 bg-black/40 rounded-full hover:text-zinc-200 hover:bg-black/60`}
       >
-        Contact Us
+        <Link smooth={true} duration={500} to="contact">
+          Kontak Kami
+        </Link>
       </button>
 
       {/* Mobile Menu Button */}
@@ -76,20 +80,29 @@ const Header = () => {
       {menu ? (
         <div className="absolute md:hidden z-10 bg-black top-0 left-0 bottom-0 flex justify-center items-center text-center w-full h-screen ease-in duration-300">
           <ul className="flex flex-col md:flex-row gap-5 text-xl">
-            <li className="text-zinc-400 hover:text-white">
-              <a href="#">Home</a>
+            <li className="text-zinc-200 hover:text-white cursor-pointer">
+              <Link smooth={true} duration={500} to="about">
+                Tentang Kami
+              </Link>
             </li>
-            <li className="text-zinc-400 hover:text-white">
-              <a href="#">About</a>
+            <li className="text-zinc-200 hover:text-white cursor-pointer">
+              <Link smooth={true} duration={500} to="services">
+                Layanan
+              </Link>
             </li>
-            <li className="text-zinc-400 hover:text-white">
-              <a href="#">Services</a>
+            <li className="text-zinc-200 hover:text-white cursor-pointer">
+              <Link smooth={true} duration={500} to="whychooseus">
+                Mengapa Kami
+              </Link>
             </li>
-            <li className="text-zinc-400 hover:text-white">
-              <a href="#">Careers</a>
-            </li>
-            <li className="text-zinc-400 hover:text-white">
-              <a href="#">Blog</a>
+            <li>
+              <button
+                className={`md:block px-6 py-2 text-black bg-white rounded-full hover:text-zinc-200 hover:bg-slate-400`}
+              >
+                <Link smooth={true} duration={500} to="contact">
+                  Kontak Kami
+                </Link>
+              </button>
             </li>
           </ul>
         </div>

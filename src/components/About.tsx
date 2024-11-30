@@ -3,20 +3,29 @@ import React from "react";
 const About = () => {
   return (
     <section className="flex flex-col px-10 bg-white">
-      <div className="flex justify-between py-5">
-        <span className="text-xl font-medium">GreenHarvest</span>
-        <span className="text-xl font-medium">GreenFarm</span>
-        <span className="text-xl font-medium">GreenTech</span>
-        <span className="text-xl font-medium">FarmTech</span>
-        <span className="text-xl font-medium">FarmFly</span>
-        <span className="text-xl font-medium">FarmGarden</span>
+      <div className="block float-left whitespace-nowrap sm:flex sm:justify-between py-5 overflow-x-auto">
+        <div className="text-xl font-medium inline-block mr-8">
+          Teknologi Hidroponik
+        </div>
+        <div className="text-xl font-medium inline-block mr-8">
+          Irigasi Cerdas
+        </div>
+        <div className="text-xl font-medium inline-block mr-8">
+          Konsultasi dan Pelatihan
+        </div>
       </div>
 
-      <p className="text-3xl py-[15%]">
-        We are ona mission to transform modern agriculture through cutting-edge
-        technology. We specialize in providing innovative solutions to the
-        farming industry, with a primary focus on our state-of-the-art Smart AG
-        Robot Picking and Fruit Transportation services.
+      <p className="text-3xl py-28 sm:py-36">
+        Kami adalah perusahaan yang berdedikasi untuk meningkatkan kesejahteraan
+        petani melalui solusi teknologi pertanian modern. Fokus utama kami
+        adalah memberikan solusi hidroponik, pemupukan yang efisien, dan sistem
+        irigasi cerdas yang dirancang untuk memaksimalkan hasil panen sekaligus
+        mengurangi biaya operasional.
+        <br />
+        <br />
+        Dengan pengalaman bertahun-tahun di bidang pertanian dan teknologi, kami
+        berkomitmen untuk menjadi mitra terbaik bagi petani dalam menghadapi
+        tantangan agrikultur di era modern.
       </p>
     </section>
   );

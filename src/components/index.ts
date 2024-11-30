@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 import Services from "./Services";
-import WhyChoseUs from "./WhyChoseUs";
+import WhyChooseUs from "./WhyChooseUs";
+import Contact from "./Contact";
 
-export { Header, Hero, About, Services, WhyChoseUs, Footer };
+export { Header, Hero, About, Services, WhyChooseUs, Contact, Footer };
